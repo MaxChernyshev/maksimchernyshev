@@ -28,7 +28,7 @@ Route::get('/', [MainController::class, 'index'])->name('main.page');
 // Admin
 Route::prefix('admin')
     ->name('admin.')
-//    ->middleware('admin')
+    ->middleware('admin')
     ->group(function ()
 {
     Route::get('/', [AdminPanelController::class, 'index'])->name('panel');
