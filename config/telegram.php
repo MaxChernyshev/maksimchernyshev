@@ -35,7 +35,7 @@ return [
         'mybot' => [
             'username'            => 'maksimchernyshev_bot',
             'chat_id'            => '380910969',
-            'token'               => '5296907518:AAG5jdS91gU8yrBH56zDblIFUQl825fyErc',
+            'token'               => 'assa',
             'certificate_path'    => env('TELEGRAM_CERTIFICATE_PATH', 'YOUR-CERTIFICATE-PATH'),
             'webhook_url'         => env('TELEGRAM_WEBHOOK_URL', 'YOUR-BOT-WEBHOOK-URL'),
             'commands'            => [
