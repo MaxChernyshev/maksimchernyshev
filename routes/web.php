@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Front\MainController;
+use App\Http\Controllers\Admin\AdminPanelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +15,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+// Front
+Route::get('/', [MainController::class, 'index'])->name('main.page');
+
+
+// Admin
+Route::prefix('admin')
+    ->name('admin.')
+    ->middleware('admin')
+    ->group(function ()
+{
+    Route::get('/', [AdminPanelController::class, 'index'])->name('panel');
+
+}
+);
