@@ -13,12 +13,16 @@ class TelegramService
     {
         $data = false;
         $user = config('telegram.bots.mybot.chat_id');
+
         try {
             $data = Telegram::sendMessage([
                 'chat_id'       => $user,
                 'parse_mode'    => 'HTML',
                 'text'          => $text,
             ]);
+
+//            dd($data);
+
 
         } catch (TelegramResponseException $e) {
             Log::alert('error send message to user '.$user.'. Message: '.$e->getMessage());
