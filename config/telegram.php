@@ -33,9 +33,9 @@ return [
     */
     'bots'                         => [
         'mybot' => [
-            'username'            => 'maksimchernyshev_bot',
-            'chat_id'            => '380910969',
-            'token'               => '5296907518:AAG5jdS91gU8yrBH56zDblIFUQl825fyErc',
+            'username'            => 'TacTestMax111Bot',
+            'chat_id'            => '5130388103',
+            'token'               => '5130388103:AAFDEIS_8CM3-AQQc9vVMPguEci1MpKI2mI',
             'certificate_path'    => env('TELEGRAM_CERTIFICATE_PATH', 'YOUR-CERTIFICATE-PATH'),
             'webhook_url'         => env('TELEGRAM_WEBHOOK_URL', 'YOUR-BOT-WEBHOOK-URL'),
             'commands'            => [
@@ -71,7 +71,7 @@ return [
     | Possible Values: (Boolean) "true" OR "false"
     |
     */
-    'async_requests'               => env('TELEGRAM_ASYNC_REQUESTS', false),
+    'async_requests'               => env('TELEGRAM_ASYNC_REQUESTS', true),
 
     /*
     |--------------------------------------------------------------------------
