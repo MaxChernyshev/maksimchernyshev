@@ -48,15 +48,23 @@
         </div>
     </div>
 
-
-
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-lg-12 my-auto">
-                <div class="card card-block w-50 mx-auto" style="border: none; background:none;">
-                    <img src="{{ asset('img/laravel.svg') }}" alt="За стеклом">
-                </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ asset('img/carousel/Laravel.svg') }}" class="d-block mx-auto my-auto align-middle w-25" alt="...">
             </div>
+            <div class="carousel-item">
+                <img src="{{ asset('img/carousel/PHP-logo.svg') }}" class="d-block mx-auto my-auto align-middle w-25" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('img/carousel/Database-mysql.svg') }}" class="d-block mx-auto my-auto align-middle w-25" alt="...">
+            </div>
+{{--            <div class="carousel-item">--}}
+{{--                <img src="..." class="d-block w-100" alt="...">--}}
+{{--            </div>--}}
+{{--            <div class="carousel-item">--}}
+{{--                <img src="..." class="d-block w-100" alt="...">--}}
+{{--            </div>--}}
         </div>
     </div>
 

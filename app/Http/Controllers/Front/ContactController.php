@@ -37,8 +37,9 @@ class ContactController extends Controller
      */
     public function store(Request $request, TelegramService $telegramService)
     {
-//        dd($request);
+//        dd($request->all());
         $newApplication = TelegramMessage::create($request->all());
+//        dd($newApplication);
 
         $phone = str_replace([" ", "(", ")", "-"], "", $newApplication->phone);
 
