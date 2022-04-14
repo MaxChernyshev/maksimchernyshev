@@ -8,7 +8,7 @@
     <!-- Styles -->
     <style>
         body {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Marmelad', sans-serif;
         }
     </style>
     <link rel="stylesheet" href="{{ asset('css/front/css/app.css') }}">
