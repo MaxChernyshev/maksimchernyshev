@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4" style="position:fixed;">
     <a href="{{ route('main.page') }}" target="_blank" class="brand-link">
-        {{--        <img src="{{ asset('img/maxlogo.png') }}" alt="max" class="brand-image " style="opacity: .8">--}}
+                <img src="{{ asset('img/logo.png') }}" alt="max" class="brand-image " style="opacity: .8">
         <span class="brand-text font-weight-light">Admin Panel</span>
     </a>
     <!-- Sidebar -->

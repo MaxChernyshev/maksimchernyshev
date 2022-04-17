@@ -23,11 +23,14 @@ Route::get('/dashboard', function () {
 require __DIR__ . '/auth.php';
 
 // Front
-Route::get('/', [MainController::class, 'index'])->name('main.page');
 
-Route::prefix('/contact')->name('contact.')->group(function () {
-    Route::get('/', [ContactController::class, 'index'])->name('index');
-    Route::post('/', [ContactController::class, 'store'])->name('store');
+Route::localizedGroup(function () {
+    Route::get('/', [MainController::class, 'index'])->name('main.page');
+
+    Route::prefix('/contact')->name('contact.')->group(function () {
+        Route::get('/', [ContactController::class, 'index'])->name('index');
+        Route::post('/', [ContactController::class, 'store'])->name('store');
+    });
 });
 
 
