@@ -10,8 +10,8 @@
                     @csrf
                     @method('POST')
                     <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input name="name" type="text" class="form-control @error('name') border-danger @enderror" id="name" placeholder="your name">
+                        <label for="name">@lang('contact.name')</label>
+                        <input name="name" type="text" class="form-control @error('name') border-danger @enderror" id="name" placeholder="@lang('contact.enter_name')">
                         @if ($errors->has('name'))
                             <div class="error text-danger">
                                 {{ $errors->first('name') }}
@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Your email address</label>
+                        <label for="email">@lang('contact.email')</label>
                         <input name="email" type="email" class="form-control @error('email') border-danger @enderror" id="email" placeholder="email@example.com">
                         @if ($errors->has('email'))
                             <div class="error text-danger">
@@ -30,8 +30,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Your phone</label>
-                        <input name="phone" type="text" class="form-control @error('phone') border-danger @enderror" id="phone" placeholder="phone">
+                        <label for="email">@lang('contact.phone')</label>
+                        <input name="phone" type="text" class="form-control @error('phone') border-danger @enderror" id="phone" placeholder="@lang('contact.enter_phone')">
                         @if ($errors->has('phone'))
                             <div class="error text-danger">
                                 {{ $errors->first('phone') }}
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Your Message</label>
+                        <label for="message">@lang('contact.message')</label>
                         <textarea class="form-control @error('message') border-danger @enderror" id="message" rows="4" name="message"></textarea>
                         @if ($errors->has('message'))
                             <div class="error text-danger">

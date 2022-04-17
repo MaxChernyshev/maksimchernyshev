@@ -15,10 +15,10 @@
 </head>
 <html>
 <body>
-<header id="header" class="">
+<header id="header" class="header">
     <div class="container">
         <div class="row pt-2 pb-2">
-            <div class="col-12">
+            <div class="col-10">
                 <nav class="navbar navbar-expand-lg">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -31,6 +31,31 @@
                         </div>
                     </div>
                 </nav>
+            </div>
+            <div class="col-2">
+                <div class="dropdown show">
+                    <a class="btn btn-secondary text-uppercase" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ localization()->getCurrentLocale() }}
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        @foreach(localization()->getSupportedLocales() as $key => $locale)
+                            <li>
+                                <a hreflang="{{ $key }}"
+                                   href="{{ localization()->getLocalizedURL($key) }}"
+                                   class="p-2 link text-uppercase {{ localization()->getCurrentLocale() == $key ? 'is-active' : '' }}"
+                                >{{ $key }}
+                                </a>
+                            </li>
+                            @if(!$loop->last)
+                                <div class="dropdown-divider"></div>
+                            @endif
+                            {{--                        @if(localization()->getSupportedLocales()->count())--}}
+
+                            {{--                            @endif--}}
+                        @endforeach
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
