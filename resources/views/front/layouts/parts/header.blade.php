@@ -15,8 +15,7 @@
 </head>
 <html>
 <body>
-<header id="header" class="">
-    {{ localization()->getSupportedLocales()->count() }}
+<header id="header" class="header">
     <div class="container">
         <div class="row pt-2 pb-2">
             <div class="col-10">
@@ -48,8 +47,11 @@
                                 >{{ $key }}
                                 </a>
                             </li>
+                            @if(!$loop->last)
+                                <div class="dropdown-divider"></div>
+                            @endif
                             {{--                        @if(localization()->getSupportedLocales()->count())--}}
-                            <div class="dropdown-divider"></div>
+
                             {{--                            @endif--}}
                         @endforeach
                     </ul>
