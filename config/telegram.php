@@ -33,14 +33,12 @@ return [
     */
     'bots'                         => [
         'mybot' => [
-            'username'            => '399774705',
-//            'username'            => 'maksimchernyshev_bot',
-            'chat_id'            => '174975791',
-//            'chat_id'            => '5130388103',
-            'token'               => env('TELEGRAM_BOT_TOKEN', '5104196624:AAHjmLt5ZnOdC_2ZN9Sx2h8EJ4AjvMuRhE4'),
-//            'token'               => '5104196624:AAHjmLt5ZnOdC_2ZN9Sx2h8EJ4AjvMuRhE4',
-//            'token'               => '5130388103:AAFDEIS_8CM3-AQQc9vVMPguEci1MpKI2mI',
 
+
+            'username'            => '5355848234',
+//            'chat_id'             => '@max_chek',
+            'chat_id'             => '399774705',
+            'token'               => '5355848234:AAHqFuYtT2EoP_SlZeZAGriLTOfbhmulB2U',
             'certificate_path'    => env('TELEGRAM_CERTIFICATE_PATH', 'YOUR-CERTIFICATE-PATH'),
             'webhook_url'         => env('TELEGRAM_WEBHOOK_URL', 'YOUR-BOT-WEBHOOK-URL'),
             'commands'            => [

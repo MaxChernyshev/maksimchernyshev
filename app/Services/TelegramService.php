@@ -11,16 +11,16 @@ class TelegramService
 {
     public function send($text)
     {
-        $data = false;
-        $user = config('telegram.bots.mybot.chat_id');
 
+        $data = false;
+
+        $user = config('telegram.bots.mybot.chat_id');
         try {
             $data = Telegram::sendMessage([
                 'chat_id'       => $user,
                 'parse_mode'    => 'HTML',
                 'text'          => $text,
             ]);
-
 //            dd($data);
 
 
