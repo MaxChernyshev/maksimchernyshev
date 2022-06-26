@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ContactRequest;
 use App\Models\TelegramMessage;
 use App\Services\TelegramService;
 use Illuminate\Http\Request;
@@ -35,23 +36,20 @@ class ContactController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, TelegramService $telegramService)
+    public function store(ContactRequest $request, TelegramService $telegramService)
     {
-//        dd($request->all());
-        $newApplication = TelegramMessage::create($request->all());
-//        dd($newApplication);
+//        dd($request->validated());
+        $newApplication = TelegramMessage::create($request->validated());
 
         $phone = str_replace([" ", "(", ")", "-"], "", $newApplication->phone);
 
         if ($newApplication) {
-            $data = (string)view('front.contact.telegram', compact('newApplication', 'phone'));
+            $data = view('front.contact.telegram', compact('newApplication', 'phone'))->render();
         }
 
         $text = 'У вас новое сообщение: ' . $data;
 
         $telegramService->send($text);
-
-//        dd($text);
 
         return redirect()->back();
     }

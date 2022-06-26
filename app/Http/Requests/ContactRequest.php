@@ -16,6 +16,16 @@ class ContactRequest extends FormRequest
         return true;
     }
 
+
+//    protected function prepareForValidation()
+//    {
+//        if ($this->phone) {
+//            $this->merge([
+//                'phone' => preg_replace('~\D+~', '', $this->phone),
+//            ]);
+//        }
+//    }
+
     /**
      * Get the validation rules that apply to the request.
      *
@@ -26,7 +36,8 @@ class ContactRequest extends FormRequest
         return [
             'name' => ['required', 'string'],
             'email' => ['email'],
-            'phone' => ['required', 'string', 'regex:/^\+380\d{9}$/'],
+            'phone' => ['required', 'string'],
+//            'phone' => ['required', 'string', 'regex:/^\+380\d{9}$/'],
             'message' => ['required', 'string'],
 
         ];
