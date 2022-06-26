@@ -35,10 +35,10 @@ return [
         'mybot' => [
 
 
-            'username'            => '5355848234',
+            'username'            => env('TELEGRAM_USERNAME'),
 //            'chat_id'             => '@max_chek',
-            'chat_id'             => '399774705',
-            'token'               => '5355848234:AAHqFuYtT2EoP_SlZeZAGriLTOfbhmulB2U',
+            'chat_id'             => env('TELEGRAM_CHAT_ID'),
+            'token'               => env('TELEGRAM_TOKEN'),
             'certificate_path'    => env('TELEGRAM_CERTIFICATE_PATH', 'YOUR-CERTIFICATE-PATH'),
             'webhook_url'         => env('TELEGRAM_WEBHOOK_URL', 'YOUR-BOT-WEBHOOK-URL'),
             'commands'            => [
