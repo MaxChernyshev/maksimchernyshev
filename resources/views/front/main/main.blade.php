@@ -1,11 +1,12 @@
 @extends('front.layouts.layout')
 
 @section('content')
-    <section id="main-div" class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
+    <section id="main-div"
+        class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover sm-cover h-screen flex items-center"
         style="background-image:url('{{ asset('storage/front/images/landscape.jpg') }}');">
-        <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto lg:my-0">
+        <div class="max-w-4xl flex items-center justify-center h-auto lg:h-screen flex-wrap mx-auto lg:my-0">
             <!--Main Col-->
-            <div id="profile" class="w-full rounded-lg shadow-2xl bg-white opacity-75 mx-12 lg:mx-0">
+            <div id="profile" class="w-full rounded-xl shadow-2xl bg-white opacity-75 mx-12 lg:mx-0">
                 <div class="p-4 md:p-12 text-center lg:text-left">
 
                     <h1 class="text-3xl font-bold pt-8 lg:pt-0 text-center">Max Chernyshev</h1>
@@ -100,16 +101,7 @@
                         </a>
                     </div>
                 </div>
-
             </div>
-
-            <!--Img Col-->
-            {{-- <div class="w-full lg:w-2/5">
-        <!-- Big profile image for side bar (desktop) -->
-        <img src="https://source.unsplash.com/MP0IUfwrn0A"
-            class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
-    </div> --}}
-
 
             <!-- Pin to top right corner -->
             <div class="absolute top-0 right-0 h-12 w-18 p-4">
