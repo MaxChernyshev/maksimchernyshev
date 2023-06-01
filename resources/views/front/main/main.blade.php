@@ -2,7 +2,7 @@
 
 @section('content')
     <section id="main-div" class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
-        style="background-image:url('{{ Vite::asset('public/storage/front/images/landscape.jpg') }}');">
+        style="background-image:url('{{ Vite::asset('resources/front/images/front/landscape.jpg') }}');">
         <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto lg:my-0">
             <!--Main Col-->
             <div id="profile" class="w-full rounded-lg shadow-2xl bg-white opacity-75 mx-12 lg:mx-0">
