@@ -70,19 +70,13 @@
                         </div>
                     </div>
 
-                    <div class="w-full flex items-center justify-center mx-auto">
+                    {{-- <div class="w-full flex items-center justify-center mx-auto">
                         <div class="pt-12 pb-8">
                             <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
                                 Get In Touch
                             </button>
                         </div>
-                    </div>
-
-
-
-                    <form action="#">
-                        <input type="text" class="border-1 rounded-full">
-                    </form>
+                    </div> --}}
 
                     <div
                         class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-center space-x-10">
@@ -95,7 +89,8 @@
                             </svg>
                         </a>
 
-                        <a class="link" href="https://www.linkedin.com/in/maksimchernyshev/" data-tippy-content="@linkedin" target="_blank">
+                        <a class="link" href="https://www.linkedin.com/in/maksimchernyshev/"
+                            data-tippy-content="@linkedin" target="_blank">
                             <svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <title>LinkedIn</title>
