@@ -11,4 +11,9 @@ class MainController extends Controller
     {
         return view('front.main.main');
     }
+
+    public function index1()
+    {
+        return view('front.main.main-page');
+    }
 }
