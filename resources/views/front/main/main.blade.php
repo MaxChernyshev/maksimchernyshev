@@ -46,7 +46,7 @@
                         </div>
                         <div class="w-5/6">
                             <p class=" pt-2 text-gray-600 text-xs lg:text-sm text-left">
-                                Almere, Flevoland, Netherlands
+                                Nanaimo, British Columbia, Canada
                             </p>
 
                         </div>
