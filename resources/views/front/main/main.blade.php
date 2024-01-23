@@ -10,7 +10,7 @@
                 <div class="p-4 md:p-12 text-center lg:text-left">
 
                     <h1 class="text-3xl font-bold pt-8 lg:pt-0 text-center">Max Chernyshev</h1>
-                    <h2 class="text-2xl font-bold pt-8 lg:pt-0 text-center">Laravel backend developer</h2>
+                    <h2 class="text-2xl font-bold pt-8 lg:pt-0 text-center">WEB/PHP/Laravel developer</h2>
 
                     <div class="flex flex-row items-center justify-center my-4">
                         <div class="w-1/6">
@@ -23,12 +23,13 @@
                         </div>
                         <div class="w-5/6">
                             <p class=" pt-2 text-gray-600 text-xs lg:text-sm text-left">
-                                Hi! I am a PHP/Laravel backend developer.
-                                I have gained experience in PHP/Laravel, MySQL/Eloquent, Admin panels,
-                                TailwindCSS, Bootstrap, Blade, Livewire, LAMP, third party API, Postman, Github, Gitlab.
-                                I have worked on a variety of projects, from small-scale websites to large-scale enterprise
-                                applications,
-                                and have consistently delivered quality work that meets client expectations.
+                                I have more than 4 years of WEB/PHP experience, including 2+ years of Laravel development.
+                                I have gained experience in PHP/Laravel, MySQL/Eloquent,
+                                Linux, Apache, Nginx,
+                                third-party API (HTTP Client, Guzzle HTTP client), Postman,
+                                Tailwind CSS, Bootstrap, Javascript, Vite, Webpack, Livewire, Blade,
+                                Git/GitHub/Bitbucket, Jira, etc.
+
                             </p>
 
                         </div>
@@ -52,36 +53,10 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-row items-center justify-center my-4">
-                        <div class="w-1/6">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-8 h-8  text-green-700 mx-auto">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                            </svg>
-                        </div>
-                        <div class="w-5/6">
-                            <p class=" pt-2 text-gray-600 text-xs lg:text-sm text-left">
-                                52.376946958092795° N, 5.217234364630099° W
-                            </p>
-
-                        </div>
-                    </div>
-
-                    {{-- <div class="w-full flex items-center justify-center mx-auto">
-                        <div class="pt-12 pb-8">
-                            <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
-                                Get In Touch
-                            </button>
-                        </div>
-                    </div> --}}
 
                     <div
                         class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-center space-x-10">
-                        <a class="link" href="#" data-tippy-content="@github">
+                        <a class="link" href="https://github.com/MaxChernyshev" data-tippy-content="@github" target="_blank">
                             <svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <title>GitHub</title>
